@@ -11,21 +11,22 @@
 
         table {
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
-        }
-
-        tr.linha {
-            background-color: gray;
-        }
-
-        td.dado {
-            background-color: yellow;
         }
 
         td {
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /*Alinhamento horizontal*/
+            vertical-align: middle;  /*Alinhamento vertical*/
+        }    
+
+        .numero {
+            text-align: right;
         }
+        
+
     </style>
 </head>
 <body>
@@ -37,17 +38,17 @@
                 Table data= dado da tabela-->
     <table>
         <tr>
-            <td>A1</td>
+            <td class="numero">A1</td>
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linha">
+        <tr>
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
         </tr> <!-- Cada TR é uma linha-->
         <tr>
-            <td class="dado">A3</td>
+            <td >A3</td>
             <td>B3</td>
             <td>C3</td>
         </tr>
